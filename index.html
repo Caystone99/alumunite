@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./icon/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sideNav">
+        <div class="navLogo">
+            <img src="./assets/Logo[672].png" width="150px" alt='alumunite-logo'/>
+        </div>
+
+        <div class="navLink">
+            <a href="#"><i class='fa fa-arrow-left'></i>  <span>Back to Login</span></a>
+        </div>
+
+        <ul class="navIndex">
+            <li>
+                <div class="formIndexHead">
+                    <span class="circle notActive">
+                        <i class="fa fa-check"></i>
+                    </span>
+                    <span class="formTitle notActiveTitle">
+                        PERSONAL DATA
+                    </span>
+                </div>
+                <div class="formIndexContent">
+                </div>
+            </li>
+            <li>
+                <div class="formIndexHead">
+                    <span class="circle active">
+                        2
+                    </span>
+                    <span class="formTitle ActiveTitle">
+                        ALUMNI DATA
+                    </span>
+                </div>
+                <div class="formIndexContent">
+                    <p>
+                        Select an account type to customise your Alumunite experience
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+
+        <div class="sideNavVector">
+            <img src="./assets/Layer 2[674].png"/>
+        </div>
+        
+    </section>
+
+    <section class="body">
+            <form>
+                <div id="schoolInfo">
+                    <h3>School Information</h3>
+
+                <label for="schoolName" class="'">
+                    Select a school you graduated from
+                </label>
+                <br/>
+                <div class="formInput">
+                    <input
+                        type="text"
+                        list="schoolList"
+                        name='schoolName_1'
+                        placeholder="Select Your School"
+                    />
+                    <datalist id="schoolList">
+                        <option value="Faith Academy">Faith Academy</option>
+                    </datalist>
+                    <i class="fa fa-chevron-down formChev"></i>
+                </div>
+
+                <p>
+                    Can't find your school? <a href='#'>Add your school to the list</a>
+                </p>
+                
+                <div class="formRadio"> 
+                    <span class="formRadioCheck">
+                        <input type="radio" value="Yes" name='radioYes_1'/>
+                    </span> 
+                    <span class="formRadioText">
+                        Still schooling here presently
+                    </span>
+                </div>
+                
+                <br/>
+                
+                <label for="gradYear">
+                    Year Graduated
+                </label>
+                <div class="formInput">
+                    <input
+                        type="date"
+                        name="dateGrad_1"
+                    />
+                    <i class="fa fa-calendar-alt formCal"></i>
+                </div>
+                <br/>
+                <hr/>
+
+                </div>
+
+                <div class="addBtn" id="addInput">
+                    <i class="fa fa-graduation-cap fa-2x"></i>
+                    <span>
+                        <h5>Add Another School</h5>
+                        <p>More schools means more connections</p>
+                    </span>
+                    <i class="fa fa-plus-circle fa-1x"></i>
+                </div>
+                
+                <br/>
+                <button type="submit" class="submitBtn">
+                    Submit
+                </button>
+            </form>
+    </section>
+</body>
+
+<script src="index.js"></script>
+<script src="./icon/js/all.js"></script>
+</html>

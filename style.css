@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+:root{
+    --accent:rgb(0, 132, 227);
+}
+
+*{
+    margin:0;
+    padding:0;
+    transition:0.4s;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
+    background-color:rgb(247, 251, 254);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+datalist{
+    position:absolute;
+    background-color:#fff;
+    border:1px solid rgb(243, 243, 243);
+    border-radius:4px;
+}
+option{
+    background-color:#fff;
+    padding:4px;
+    color:#1212;
+    margin-bottom:2px;
+    cursor:pointer;
+}
+select{
+    -webkit-appearance: none;
+}
+input::-webkit-calendar-picker-indicator{
+    opacity:0;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+.sideNav{
+    z-index:1000;
+    width:25vw;
+    height:100vh;
+    background-color: #fff;
+    position:fixed;
+    left:0;
+}
+.navLogo{
+    padding:30px;
+}
+.navLink{
+    padding:30px;
+}
+.navLink a{
+    color:var(--accent);
+}
+.navLink a span{
+    font-weight:bold;
+    color:#121212;
+}
+
+.navIndex{
+    padding:30px 50px;
+}
+.navIndex li{
+    display:block;
+    width:250px;
+}
+.navIndex li:last-child .formIndexContent{
+    border:none;
+}
+.formIndexHead{
+    display:flex;
+    align-items:center;
+    margin-right:20px;
+}
+.formTitle{
+    font-weight:bolder;
+    font-size:15px
+}
+.formIndexHead .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height:22px;
+    width:22px;    
+    padding:5px;
+    border-radius: 25px;
+    margin-right:20px;
+}
+.formIndexContent{
+    border-left:1px solid rgba(87, 89, 92, 0.432);
+    padding:10px;
+    display:flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left:16px;
+}
+.formIndexContent p{
+    font-size:12px;
+    font-weight:500;
+    position: relative;
+    padding-left:26px;
+}
+.notActive{
+    border:none;
+    background-color:rgb(113, 198, 33);
+    color:#fff;
+}
+.notActiveTitle{
+    opacity:0.4;
+}
+.active{
+    font-weight:bolder;
+    background-color:none;
+    border:1px solid var(--accent);
+    color:var(--accent);
+}
+.content h5{
+    font-weight: bolder;
+}
+.sideNavVector{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-top:50px;
+}
+.sideNavVector img{
+    width:250px;
+}
+
+/*FORMS*/
+.body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.body form{
+    top:15vh;
+    position: absolute;
+    width:450px;
+    padding-bottom:50px;
+}
+.body form h3{
+    font-size:34px;
+    margin-bottom:20px;
+}
+.body form label{
+    font-size:12px;
+    font-weight:bold;
+}
+.body form p{
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+}
+.body form p a{
+    color:var(--accent)
+}
+.formInput{
+    width:96%;
+    border:1px solid rgb(215, 222, 229);
+    padding:8px;
+    background-color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:5px;
+    margin-bottom:8px;
+}
+.formInput select, .formInput input{
+    width:90%;
+    border:none;
+    outline:none;
+    padding:5px;
+}
+.formInput i{
+    padding-right:50px;
+}
+.formChev{
+    color:var(--accent)
+}
+.formCal{
+    opacity:0.2;
+    color:var(--accent)
+}
+.formRadio{
+    display:flex;
+    align-items: center;
+}
+.formRadio input{
+    position:absolute;
+    opacity:0;
+    cursor:pointer;
+    height:10;
+}
+.formRadio input:checked{
+    opacity:0.8;
+}
+.formRadioCheck{
+    margin:30px 0 5px 0px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height:5px;
+    width:5px;
+    border:1px solid rgb(215, 222, 229);
+    border-radius: 50%;
+    background:none;
+}
+.formRadioText{
+    margin:30px 0 5px 30px;
+}
+
+.addBtn{
+    cursor:pointer;
+    background-color: rgb(226, 243, 255);
+    color:var(--accent);
+    padding:15px 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:5px;
+}
+.addBtn span h5{
+    font-weight:bolder;
+}
+.addBtn span p{
+    margin-top:5px;
+    font-weight:200;
+    color:rgb(73, 73, 73);
+}
+
+.submitBtn{
+    float:right;
+    margin-top:20px;
+    color:#fff;
+    background-color: var(--accent);
+    border:none;
+    padding:10px;
+    width:180px;
+    border-radius:3px;
+}
+hr{
+    border:1px solid rgba(215, 222, 229, 0.479);
+    margin-bottom: 30px;
+}
